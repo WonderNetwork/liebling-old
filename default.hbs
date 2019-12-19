@@ -11,6 +11,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta class="swiftype" name="title" data-type="string" content="{{meta_title}} - Blog" />
 
+    {{#is "author"}}
+        {{#if author.bio}}
+        <meta name="description" content="{{author.bio}}" />
+          {{else}}
+          <meta name="description" content="Blog posts by {{author.name}}" />
+        {{/if}}
+    {{/is}}
+
+    {{#is "post"}}
+        {{#post}}
+          {{^if meta_description}}
+              <meta name="description" content="{{excerpt}}" />
+          {{/if}}
+        {{/post}}
+    {{/is}}
+
     {{!-- Styles'n'Scripts --}}
     <link rel="stylesheet" type="text/css" href="{{asset "css/app.css"}}" media="screen" />
 

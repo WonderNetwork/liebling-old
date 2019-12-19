@@ -4,7 +4,7 @@
   height: 20px;
   background-size: 148px 20px;
   object-fit: contain;
-  background-image: url("/assets/images/wonderproxy-colour.svg");
+  background-image: url("/blog/assets/images/wonderproxy-colour.svg");
    
   @include respond-to('medium') {
     background-size: 197px 27px;
@@ -20,6 +20,6 @@
   }
 
   [data-theme="dark"] & {
-     background-image: url("/assets/images/wonderproxy-white.svg");
+     background-image: url("/blog/assets/images/wonderproxy-white.svg");
   }
 }

@@ -34,6 +34,13 @@
     }
   }
 
+  &.no-picture {
+    background-image: url('/blog/assets/images/background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
   &.no-picture.in-post {
     display: none;
   }

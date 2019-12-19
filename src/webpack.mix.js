@@ -30,6 +30,7 @@ mix.js('js/helpers.js', 'js/')
     files: [
       'js/**/*.js',
       'sass/**/*.scss',
+      'sass/fonts/*',
       '../**/*.hbs'
     ]
   });

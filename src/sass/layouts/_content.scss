@@ -4,6 +4,10 @@
   background-position: bottom center;
   background-repeat: repeat-x;
 
+  &.is-homepage {
+    background: none;
+  }
+
   &.in-post {
     background: none;
   }

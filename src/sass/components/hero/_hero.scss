@@ -35,10 +35,22 @@
   }
 
   &.no-picture {
-    background-image: url('/blog/assets/images/background.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    @include respond-to('medium') {
+      background-color: transparent;
+      background-image: 
+          url('/blog/assets/images/main-1.svg'), 
+          url('/blog/assets/images/main-2.svg'), 
+          url('/blog/assets/images/main-3.svg'), 
+          url('/blog/assets/images/oval.svg'), 
+          url('/blog/assets/images/oval.svg');
+      background-repeat: no-repeat;
+      background-position: top right, left top, 10% 75%, top left, right center;
+      background-size: contain, 25% 45%, 25% 40%, contain, contain;
+    }
+
+    [data-theme="dark"] & {
+      background-image: none;
+    }
   }
 
   &.no-picture.in-post {

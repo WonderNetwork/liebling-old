@@ -29,6 +29,7 @@
   color: $wonderTeal200;
   text-align: center;
   padding: 2rem 0;
+  font-weight: $font_regular;
 }
 
 .m-footer-copyright-text {
@@ -70,20 +71,12 @@
 }
 
 .m-footer__content {
-  color: $white;
   text-align: center;
   padding: 30px $mobile-space;
-
-  @include respond-to('medium') {
-    padding: 70px 0;
-    max-width: 330px;
-    margin: 0 auto;
-  }
 }
 
 .m-footer-copyright {
   font-size: 0.875rem;
-  letter-spacing: 0.3px;
   line-height: 1.75rem;
   margin-bottom: $mobile-space;
 

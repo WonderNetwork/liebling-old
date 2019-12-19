@@ -1,5 +1,8 @@
 .l-content {
   padding: 40px 0 20px;
+  @extend .bg-sparkle;
+  background-position: bottom center;
+  background-repeat: repeat-x;
 
   &.in-post {
     background: none;

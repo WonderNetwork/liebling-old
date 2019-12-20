@@ -38,3 +38,9 @@
     background-color: var(--primary-button);
   }
 }
+
+// Style classes in posts, carry-over from the last theme
+.btn.btn-secondary {
+  @extend .m-button;
+  @extend .outlined;
+}

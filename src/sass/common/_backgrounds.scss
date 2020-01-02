@@ -21,4 +21,8 @@
       background-position: top right, left top, 10% 75%, top left, right center;
       background-size: contain, 25% 45%, 25% 40%, contain, contain;
     }
+
+    [data-theme="dark"] & {
+        background: none;
+    }
 }

@@ -37,7 +37,7 @@ This header template is shared across all the pages.
                 <div class="m-submenu js-submenu">
                   <div class="l-wrapper in-submenu">
                     <section class="m-recent-articles">
-                      <h3 class="m-submenu-title in-recent-articles">{{t "Recent articles"}}</h3>
+                      <h3 class="m-submenu-title in-recent-articles"><a href="/blog">{{t "Recent articles"}}</a></h3>
                       <div class="js-recent-articles">
                         {{#get "posts" limit="4" order="published_at desc"}}
                         {{#foreach posts}}
@@ -62,8 +62,8 @@ This header template is shared across all the pages.
                         {{/get}}
                       </div>
                     </section>
-                    <section class="m-tags">
-                      <h3 class="m-submenu-title">{{t "Tags"}}</h3>
+                    <section class="m-tags p-bottom">
+                      <h3 class="m-submenu-title"><a href="/blog/tags">{{t "Tags"}}</a></h3>
                       {{#get "tags" limit="10"}}
                       <ul>
                         {{#foreach tags}}
@@ -72,6 +72,20 @@ This header template is shared across all the pages.
                         </li>
                         {{else}}
                         <li class="m-not-found">{{t "No tags found :("}}</li>
+                        {{/foreach}}
+                      </ul>
+                      {{/get}}
+                    </section>
+                    <section class="m-tags">
+                      <h3 class="m-submenu-title"><a href="/blog/authors">Authors</a></h3>
+                      {{#get "authors" }}
+                      <ul>
+                        {{#foreach authors}}
+                        <li>
+                          <a href="{{url}}">{{name}}</a>
+                        </li>
+                        {{else}}
+                        <li class="m-not-found">{{t "No authors found :("}}</li>
                         {{/foreach}}
                       </ul>
                       {{/get}}

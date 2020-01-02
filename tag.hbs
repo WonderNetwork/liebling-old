@@ -12,7 +12,7 @@ into the {body} of the default.hbs template --}}
   {{!-- Special header.hbs partial to generate the <header> tag --}}
   {{> header background=feature_image}}
   {{!-- Inject styles of the hero image to make it responsive --}}
-  {{> hero background=feature_image}}
+  <section class="m-hero no-picture" data-aos="fade">
   <div class="m-hero__content" data-aos="fade-down">
     <h1 class="m-hero-title bigger">{{name}}</h1>
     <p class="m-heading__description p-bottom">{{description}}</p>

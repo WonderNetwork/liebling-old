@@ -5,6 +5,10 @@
   font-weight: 400;
   margin: 0 0 25px;
 
+  a{
+    color: var(--link-color) !important;
+  }
+
   &.in-recent-articles {
     padding: 0 $mobile-space;
 

@@ -21,10 +21,14 @@ mix.js('js/helpers.js', 'js/')
   .js('js/home.js', 'js/')
   .js('js/post.js', 'js/')
   .js('js/page.js', 'js/')
+  .js('js/libs/jquery.swiftype.autocomplete.js', 'js/')
+  .js('js/libs/jquery.swiftype.search.js', 'js/')
   .extract()
+  .setResourceRoot('/assets')
   .sass('sass/app.scss', 'css/')
   .setPublicPath('../assets')
-  .setResourceRoot('/assets')
+  .copy('sass/fonts/icomoon/*.*', '../assets/fonts/')
+  .copy('sass/fonts/euclidsquare/*.*', '../assets/fonts/')
   .browserSync({
     proxy: "localhost:2368",
     files: [

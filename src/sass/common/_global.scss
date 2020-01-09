@@ -8,13 +8,19 @@
 }
 @font-face {
   font-family: 'EuclidSquare';
+  src: url(#{$font_path}/euclidsquare-regularitalic.ttf) format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'EuclidSquare';
   src: url(#{$font_path}/euclidsquare-medium.ttf) format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: 'EuclidSquare';
-  src: url(#{$font_path}/euclidsquare-mediumitalic.otf);
+  src: url(#{$font_path}/euclidsquare-mediumitalic.ttf) format('truetype');
   font-weight: 500;
   font-style: italic;
 }
@@ -28,7 +34,7 @@
   font-family: 'EuclidSquare';
   src: url(#{$font_path}/euclidsquare-bold.ttf) format('truetype');
   font-weight: 700;
-  font-style: normal;
+  font-style: bold;
 }
 
 body {
@@ -105,17 +111,17 @@ img.lozad.loaded {
 }
 
 ::-webkit-input-placeholder {
-  color: $wonderGrey200;
+  color: $wonderGrey;
 }
 
 ::-moz-placeholder {
-  color: $wonderGrey200;
+  color: $wonderGrey;
 }
 
 :-ms-input-placeholder {
-  color: $wonderGrey200;
+  color: $wonderGrey;
 }
 
 :-moz-placeholder {
-  color: $wonderGrey200;
+  color: $wonderGrey;
 }

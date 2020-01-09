@@ -57,15 +57,15 @@ $(document).ready(() => {
     $body.toggleClass('no-scroll-y')
   }
 
-  function trySearchFeature() {
-    if (typeof ghostSearchApiKey !== 'undefined') {
-      getAllPosts(ghostHost, ghostSearchApiKey)
-    } else {
-      $openSearch.css('visibility', 'hidden')
-      $closeSearch.remove()
-      $search.remove()
-    }
-  }
+  // function trySearchFeature() {
+  //   if (typeof ghostSearchApiKey !== 'undefined') {
+  //     getAllPosts(ghostHost, ghostSearchApiKey)
+  //   } else {
+  //     $openSearch.css('visibility', 'hidden')
+  //     $closeSearch.remove()
+  //     $search.remove()
+  //   }
+  // }
 
   function getAllPosts(host, key) {
     const api = new GhostContentAPI({
@@ -124,50 +124,50 @@ $(document).ready(() => {
     }
   })
 
-  $openSearch.click(() => {
-    $search.addClass('opened')
-    setTimeout(() => {
-      $inputSearch.focus()
-    }, 400);
-    toggleScrollVertical()
-  })
+  // $openSearch.click(() => {
+  //   $search.addClass('opened')
+  //   setTimeout(() => {
+  //     $inputSearch.focus()
+  //   }, 400);
+  //   toggleScrollVertical()
+  // })
 
-  $closeSearch.click(() => {
-    $inputSearch.blur()
-    $search.removeClass('opened')
-    toggleScrollVertical()
-  })
+  // $closeSearch.click(() => {
+  //   $inputSearch.blur()
+  //   $search.removeClass('opened')
+  //   toggleScrollVertical()
+  // })
 
-  $inputSearch.keyup(() => {
-    if ($inputSearch.val().length > 0 && fuse) {
-      const results = fuse.search($inputSearch.val())
-      let htmlString = ''
+  // $inputSearch.keyup(() => {
+  //   if ($inputSearch.val().length > 0 && fuse) {
+  //     const results = fuse.search($inputSearch.val())
+  //     let htmlString = ''
 
-      if (results.length > 0) {
-        for (var i = 0, len = results.length; i < len; i++) {
-          htmlString += `
-          <article class="m-result">\
-            <a href="${results[i].url}" class="m-result__link">\
-              <h3 class="m-result__title">${results[i].title}</h3>\
-              <span class="m-result__date">${formatDate(results[i].published_at)}</span>\
-            </a>\
-          </article>`
-        }
+  //     if (results.length > 0) {
+  //       for (var i = 0, len = results.length; i < len; i++) {
+  //         htmlString += `
+  //         <article class="m-result">\
+  //           <a href="${results[i].url}" class="m-result__link">\
+  //             <h3 class="m-result__title">${results[i].title}</h3>\
+  //             <span class="m-result__date">${formatDate(results[i].published_at)}</span>\
+  //           </a>\
+  //         </article>`
+  //       }
 
-        $searchNoResults.hide()
-        $searchResults.html(htmlString)
-        $searchResults.show()
-      } else {
-        $searchResults.html('')
-        $searchResults.hide()
-        $searchNoResults.show()
-      }
-    } else {
-      $searchResults.html('')
-      $searchResults.hide()
-      $searchNoResults.hide()
-    }
-  })
+  //       $searchNoResults.hide()
+  //       $searchResults.html(htmlString)
+  //       $searchResults.show()
+  //     } else {
+  //       $searchResults.html('')
+  //       $searchResults.hide()
+  //       $searchNoResults.show()
+  //     }
+  //   } else {
+  //     $searchResults.html('')
+  //     $searchResults.hide()
+  //     $searchNoResults.hide()
+  //   }
+  // })
 
   $toggleDarkMode.change(() => {
     if ($toggleDarkMode.is(':checked')) {
@@ -249,5 +249,5 @@ $(document).ready(() => {
   shave('.js-article-card-title', 100)
   shave('.js-article-card-title-no-image', 250)
 
-  trySearchFeature()
+  // trySearchFeature()
 })

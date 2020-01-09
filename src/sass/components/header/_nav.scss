@@ -48,6 +48,7 @@
 
       a {
         color: inherit;
+        padding-bottom: 8px;
       }
     }
   }
@@ -59,15 +60,30 @@
   margin-right: 0.7rem !important;
 }
 
-.nav-explore-plans{
+.nav-blog {
+  a {
+    font-weight: 600;
+    color: $wonderGreenDark;
+    border-bottom: 4px solid $wonderTeal;
+  }
+}
+
+.nav-explore-plans {
   @extend .m-button;
   @extend .primary;
+  margin-right: 16px !important;
+}
+
+.js-submenu-option {
+  margin-right: 52px !important;
 }
 
 .m-nav__right {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  @include respond-to('medium') {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+  }
 }
 
 .rtl {

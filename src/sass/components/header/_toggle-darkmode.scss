@@ -9,10 +9,10 @@
   z-index: 2;
 
   @include respond-to('medium') {
-    position: relative;
-    right: auto;
+    position: absolute;
+    right: 20px;
     bottom: auto;
-    margin-left: 20px;
+    top: 0;
     z-index: auto;
   }
 

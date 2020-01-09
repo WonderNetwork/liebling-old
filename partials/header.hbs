@@ -12,9 +12,6 @@ This header template is shared across all the pages.
       <span class="icon-menu"></span>
     </button>
     <a href="/" class="m-logo in-mobile-topbar"></a>
-    <button class="m-icon-button in-mobile-topbar js-open-search" aria-label="Open search">
-      <span class="icon-search"></span>
-    </button>
   </div>
 
   <div class="m-menu js-menu">
@@ -38,6 +35,10 @@ This header template is shared across all the pages.
                   <div class="l-wrapper in-submenu">
                     <section class="m-recent-articles">
                       <h3 class="m-submenu-title in-recent-articles"><a href="/blog">{{t "Recent articles"}}</a></h3>
+                      <div class="m-toggle-darkmode js-tooltip" data-tippy-content="{{t "Toggle dark mode"}}">
+                        <input type="checkbox" class="js-toggle-darkmode">
+                        <div></div>
+                      </div>
                       <div class="js-recent-articles">
                         {{#get "posts" limit="4" order="published_at desc"}}
                         {{#foreach posts}}
@@ -63,7 +64,7 @@ This header template is shared across all the pages.
                       </div>
                     </section>
                     <section class="m-tags p-bottom">
-                      <h3 class="m-submenu-title"><a href="/blog/tags">{{t "Tags"}}</a></h3>
+                      <h3 class="m-submenu-title"><a href="{{@blog.url}}/tags">{{t "Tags"}}</a></h3>
                       {{#get "tags" limit="10"}}
                       <ul>
                         {{#foreach tags}}
@@ -77,7 +78,7 @@ This header template is shared across all the pages.
                       {{/get}}
                     </section>
                     <section class="m-tags">
-                      <h3 class="m-submenu-title"><a href="/blog/authors">Authors</a></h3>
+                      <h3 class="m-submenu-title"><a href="{{@blog.url}}/authors">Authors</a></h3>
                       {{#get "authors" }}
                       <ul>
                         {{#foreach authors}}
@@ -95,13 +96,14 @@ This header template is shared across all the pages.
               </li>
               <li>
                 <div class="m-nav__right">
+                  {{> search}}
+                  {{!-- <div class="site-search-form">
+                        <label class="sr-only" for="st-search-input">Search</label>
+                        <input class="form-control filter-table site-search-input" type="text" placeholder="Search the WonderProxy blog" id="st-search-input" />
+                  </div> --}}
                   {{!-- <button class="m-icon-button in-menu-main js-open-search" aria-label="Open search">
                     <span class="icon-search"></span>
                   </button> --}}
-                  <div class="m-toggle-darkmode js-tooltip" data-tippy-content="{{t "Toggle dark mode"}}">
-                    <input type="checkbox" class="js-toggle-darkmode">
-                    <div></div>
-                  </div>
                 </div>
               </li>
             </ul>

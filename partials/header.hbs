@@ -63,8 +63,7 @@ This header template is shared across all the pages.
                         {{/get}}
                       </div>
                     </section>
-                </div>
-                <section class="m-tags p-bottom">
+                    <section class="m-tags p-bottom">
                       <h3 class="m-submenu-title"><a href="{{@blog.url}}/tags">{{t "All Tags"}}</a></h3>
                       {{#get "tags"}}
                       <ul>
@@ -92,6 +91,7 @@ This header template is shared across all the pages.
                       </ul>
                       {{/get}}
                     </section>
+                  </div>
                 </div>
               </li>
               <li>
@@ -115,11 +115,11 @@ This header template is shared across all the pages.
     <div class="l-wrapper">
       <div class="nav-secondary-wrap">
           <ul class="nav-secondary-list">
-              <li>{{#link href="/" activeClass="current"}}Recent Articles{{/link}}</li>
-              <li>{{#link href="/tag/localization" activeClass="current"}}Localization{{/link}}</li>
-              <li>{{#link href="/tag/testing" activeClass="current"}}Testing{{/link}}</li>
-              <li>{{#link href="/tag/development" activeClass="current"}}Development{{/link}}</li>
-              <li>{{#link href="/tag/marketing" activeClass="current"}}Marketing{{/link}}</li>
+              <li>{{#link href="/blog" activeClass="current"}}Recent Articles{{/link}}</li>
+              <li>{{#link href="/blog/tag/localization" activeClass="current"}}Localization{{/link}}</li>
+              <li>{{#link href="/blog//tag/testing" activeClass="current"}}Testing{{/link}}</li>
+              <li>{{#link href="/blog//tag/development" activeClass="current"}}Development{{/link}}</li>
+              <li>{{#link href="/blog//tag/marketing" activeClass="current"}}Marketing{{/link}}</li>
           </ul>
         {{> search}}
       </div>

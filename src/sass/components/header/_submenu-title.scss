@@ -10,11 +10,7 @@
   }
 
   &.in-recent-articles {
-    padding: 0 $mobile-space;
-
-    @include respond-to('medium') {
-      padding: 0;
-    }
+    padding: 0;
   }
 }
 

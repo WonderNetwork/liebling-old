@@ -99,17 +99,6 @@
     }
   }
 
-  .recent-articles {
-    display:block;
-    margin-left: 0px;
-    @include transition(margin-left linear 0.2s);
-    &:hover,
-    &:focus {
-      margin-left: -8px;
-      @include transition(margin-left linear 0.2s);
-    }
-  }
-
   em {
     font-weight: 300;
   }

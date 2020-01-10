@@ -63,9 +63,10 @@ This header template is shared across all the pages.
                         {{/get}}
                       </div>
                     </section>
-                    <section class="m-tags p-bottom">
-                      <h3 class="m-submenu-title"><a href="{{@blog.url}}/tags">{{t "Tags"}}</a></h3>
-                      {{#get "tags" limit="10"}}
+                </div>
+                <section class="m-tags p-bottom">
+                      <h3 class="m-submenu-title"><a href="{{@blog.url}}/tags">{{t "All Tags"}}</a></h3>
+                      {{#get "tags"}}
                       <ul>
                         {{#foreach tags}}
                         <li>
@@ -79,7 +80,7 @@ This header template is shared across all the pages.
                     </section>
                     <section class="m-tags">
                       <h3 class="m-submenu-title"><a href="{{@blog.url}}/authors">Authors</a></h3>
-                      {{#get "authors" }}
+                      {{#get "authors" order="name asc" }}
                       <ul>
                         {{#foreach authors}}
                         <li>
@@ -91,12 +92,10 @@ This header template is shared across all the pages.
                       </ul>
                       {{/get}}
                     </section>
-                  </div>
                 </div>
               </li>
               <li>
                 <div class="m-nav__right">
-                  {{> search}}
                   {{!-- <div class="site-search-form">
                         <label class="sr-only" for="st-search-input">Search</label>
                         <input class="form-control filter-table site-search-input" type="text" placeholder="Search the WonderProxy blog" id="st-search-input" />
@@ -112,4 +111,18 @@ This header template is shared across all the pages.
       </div>
     </div>
   </div>
+  <nav class="nav-secondary" data-aos="fade-down">
+    <div class="l-wrapper">
+      <div class="nav-secondary-wrap">
+          <ul class="nav-secondary-list">
+              <li>{{#link href="/" activeClass="current"}}Recent Articles{{/link}}</li>
+              <li>{{#link href="/tag/localization" activeClass="current"}}Localization{{/link}}</li>
+              <li>{{#link href="/tag/testing" activeClass="current"}}Testing{{/link}}</li>
+              <li>{{#link href="/tag/development" activeClass="current"}}Development{{/link}}</li>
+              <li>{{#link href="/tag/marketing" activeClass="current"}}Marketing{{/link}}</li>
+          </ul>
+        {{> search}}
+      </div>
+    </div>
+  </nav>
 </header>

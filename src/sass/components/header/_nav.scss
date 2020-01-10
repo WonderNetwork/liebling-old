@@ -64,7 +64,9 @@
   a {
     font-weight: 600;
     color: $wonderGreenDark;
-    border-bottom: 4px solid $wonderTeal;
+    @include respond-to('medium') {
+      border-bottom: 4px solid $wonderTeal;
+    }
   }
 }
 
@@ -75,7 +77,7 @@
 }
 
 .js-submenu-option {
-  margin-right: 52px !important;
+  margin-right: 0 !important;
 }
 
 .m-nav__right {
@@ -100,3 +102,39 @@
     }
   }
 }
+
+// Secondary navigation banner
+.nav-secondary {
+  display: none;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  border-bottom: 1px solid var(--primary-border-color);
+  border-top: 1px solid var(--primary-border-color);
+  @include respond-to('medium') {
+    display: block;
+  }
+}
+
+.nav-secondary-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-secondary-list {
+  padding: 0; margin: 0;
+
+  li {
+    display: inline-block;
+    margin-right: 2rem;
+
+    a {
+      color: var(--primary-button);
+
+      &.current {
+        font-weight: bold;
+      }
+    }
+  }
+}
+

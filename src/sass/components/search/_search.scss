@@ -2,40 +2,26 @@
 .filter-table{
   padding: 10px 0 10px 32px;
   height: auto;
-  min-width: 220px;
+  min-width: 260px;
   background: url(#{$image_path}/filter.svg) no-repeat 8px;
 }
 
 .site-search-form {
-  @include respond-to('medium') {
-      position: absolute;
-      right: 0;
-      padding: 0;
-  }
+  // @include respond-to('medium') {
+  //     position: absolute;
+  //     right: 0;
+  //     padding: 0;
+  // }
 
-  padding: 12px 0;
+  // padding: 12px 0;
 }
 
 .st-default-search-input {
   height: 48px;
   padding: 10px 0 10px 32px;
-  min-width: 0;
-  transition: all .5s ease;
   color: $wonderBlack;
-  width: 100%;
-
-  &:focus {
-    @include respond-to('medium') {
-          width: 320px;
-          transition: all .5s ease;
-          background-color: #fff;
-          color: $wonderBlack;
-          cursor: auto;
-      }
-  }
 
   @include respond-to('medium') {
-      width: 32px;
       color: $wonderBlack;
       cursor: pointer;
   }

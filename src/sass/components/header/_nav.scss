@@ -128,12 +128,12 @@
     display: inline-block;
     margin-right: 2rem;
 
+    &.current {
+      font-weight: bold;
+    }
+
     a {
       color: var(--primary-button);
-
-      .current & {
-        font-weight: bold;
-      }
     }
   }
 }

@@ -3,6 +3,13 @@ This search template is used to display the search form.
 --}}
 
 <div class="site-search-form">
-    <label class="sr-only" for="search">Search</label>
-    <input id="search" class="filter-table site-search-input st-default-search-input" type="text" placeholder="Search the WonderProxy blog"  />
+    <form id="search-form" >
+        <label class="sr-only" for="search">Search</label>
+        <input
+            name="stq" 
+            id="search" 
+            class="filter-table site-search-input st-default-search-input" 
+            type="search" 
+            placeholder="Search the WonderProxy blog"  />
+    </form>
 </div>

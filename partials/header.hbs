@@ -94,17 +94,6 @@ This header template is shared across all the pages.
                   </div>
                 </div>
               </li>
-              <li>
-                <div class="m-nav__right">
-                  {{!-- <div class="site-search-form">
-                        <label class="sr-only" for="st-search-input">Search</label>
-                        <input class="form-control filter-table site-search-input" type="text" placeholder="Search the WonderProxy blog" id="st-search-input" />
-                  </div> --}}
-                  {{!-- <button class="m-icon-button in-menu-main js-open-search" aria-label="Open search">
-                    <span class="icon-search"></span>
-                  </button> --}}
-                </div>
-              </li>
             </ul>
           </nav>
         </div>
@@ -115,11 +104,7 @@ This header template is shared across all the pages.
     <div class="l-wrapper">
       <div class="nav-secondary-wrap">
           <ul class="nav-secondary-list">
-              <li>{{#link href="/blog" activeClass="current"}}Recent Articles{{/link}}</li>
-              <li>{{#link href="/blog/tag/localization" activeClass="current"}}Localization{{/link}}</li>
-              <li>{{#link href="/blog//tag/testing" activeClass="current"}}Testing{{/link}}</li>
-              <li>{{#link href="/blog//tag/development" activeClass="current"}}Development{{/link}}</li>
-              <li>{{#link href="/blog//tag/marketing" activeClass="current"}}Marketing{{/link}}</li>
+            {{navigation type="secondary"}}
           </ul>
         {{> search}}
       </div>

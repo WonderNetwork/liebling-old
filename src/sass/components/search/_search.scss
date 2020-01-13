@@ -1,33 +1,30 @@
 //Custom styles
 .filter-table{
-  padding: 10px 0 10px 32px;
+  padding: 10px 10px 10px 32px;
   height: auto;
-  min-width: 260px;
+  min-width: 280px;
   background: url(#{$image_path}/filter.svg) no-repeat 8px;
 }
-
-.site-search-form {
-  // @include respond-to('medium') {
-  //     position: absolute;
-  //     right: 0;
-  //     padding: 0;
-  // }
-
-  // padding: 12px 0;
-}
-
 .st-default-search-input {
   height: 48px;
   padding: 10px 0 10px 32px;
-  color: $wonderBlack;
-
-  @include respond-to('medium') {
-      color: $wonderBlack;
-      cursor: pointer;
-  }
+  color: var(--titles-color);
 }
 
 .st-default-search-input:not(:focus){
-  box-shadow: none;
   border: none;
+}
+
+.st-page {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+}
+
+.st-no-results {
+  margin-right: 6px;
+}
+
+.st-spelling-suggestion a{
+  color: var(--link-color);
 }

@@ -7,12 +7,9 @@
 }
 .st-default-search-input {
   height: 48px;
+  border: none;
   padding: 10px 0 10px 32px;
   color: var(--titles-color);
-}
-
-.st-default-search-input:not(:focus){
-  border: none;
 }
 
 .st-page {

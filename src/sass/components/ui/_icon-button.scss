@@ -96,7 +96,7 @@
     // z-index: 6;
     position: relative;
 
-    &.active {
+    &.active, &:focus {
       color: var(--primary-subtle-color);
     }
   }

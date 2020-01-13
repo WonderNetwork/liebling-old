@@ -1,3 +1,15 @@
+.icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+  background: var(--primary-foreground-color);
+}
+
+.icon-bar+.icon-bar {
+  margin-top: 4px;
+}
+
 .m-icon-button {
   color: var(--titles-color);
   font-size: 1.125rem;
@@ -8,6 +20,7 @@
   background-color: transparent;
   @extend .content-centered;
   @extend .no-appearance;
+  display: block;
 
   &.outlined {
     border-radius: 50%;
@@ -26,7 +39,6 @@
   }
 
   &.in-mobile-topbar {
-    width: 65px;
     height: 100%;
   }
 

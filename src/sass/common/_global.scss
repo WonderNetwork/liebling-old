@@ -111,17 +111,17 @@ img.lozad.loaded {
 }
 
 ::-webkit-input-placeholder {
-  color: $wonderGrey;
+  color: var(--placeholder);
 }
 
 ::-moz-placeholder {
-  color: $wonderGrey;
+  color: var(--placeholder);
 }
 
 :-ms-input-placeholder {
-  color: $wonderGrey;
+  color: var(--placeholder);
 }
 
 :-moz-placeholder {
-  color: $wonderGrey;
+  color: var(--placeholder);
 }

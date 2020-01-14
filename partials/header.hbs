@@ -17,7 +17,6 @@ This header template is shared across all the pages.
         <span class="icon-bar"></span>
     </button>
   </div>
-
   <div class="m-menu js-menu">
     <button class="m-icon-button outlined as-close-menu js-close-menu" aria-label="Close menu">
       <span class="icon-close"></span>
@@ -31,7 +30,18 @@ This header template is shared across all the pages.
               {{#if @site.navigation}}
                 {{navigation}}
               {{/if}}
-              <li role="menuitem" class="js-submenu-option">
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="nav-secondary" data-aos="fade-down">
+    <div class="l-wrapper">
+      <div class="nav-secondary-wrap">
+          <ul class="nav-secondary-list">
+            {{navigation type="secondary"}}
+            <li role="menuitem" class="js-submenu-option">
                 <button class="m-icon-button in-menu-main more js-toggle-submenu" aria-label="Toggle submenu">
                   <span class="icon-more"></span>
                 </button>
@@ -98,17 +108,6 @@ This header template is shared across all the pages.
                   </div>
                 </div>
               </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </div>
-  <nav class="nav-secondary" data-aos="fade-down">
-    <div class="l-wrapper">
-      <div class="nav-secondary-wrap">
-          <ul class="nav-secondary-list">
-            {{navigation type="secondary"}}
           </ul>
         {{> search}}
       </div>

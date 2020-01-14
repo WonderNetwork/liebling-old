@@ -11,6 +11,7 @@
 }
 
 .m-icon-button {
+  display: flex;
   color: var(--titles-color);
   font-size: 1.125rem;
   border: 0;
@@ -106,6 +107,7 @@
     width: 40px;
     height: 40px;
     font-size: 0.625rem;
+    display: flex;
 
     @include respond-to('medium') {
       width: 46px;
@@ -192,6 +194,7 @@
     width: 31px;
     height: 31px;
     margin: 0 25px;
+    display: flex;
 
     @include respond-to('large') {
       font-size: 0.875rem;

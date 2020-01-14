@@ -63,3 +63,10 @@ _:-ms-fullscreen, :root .m-submenu {
     top: 65px;
   }
 }
+
+.submenu-option {
+  width: 100%;
+  @include respond-to('medium') {
+    width: auto;
+  }
+}

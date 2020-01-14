@@ -10,7 +10,10 @@
   }
 
   &.in-recent-articles {
-    padding: 0;
+    padding-left: 20px;
+    @include respond-to('medium') {
+      padding: 0;
+    }
   }
 }
 

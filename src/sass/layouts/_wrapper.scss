@@ -12,17 +12,13 @@
   //   padding: 0;
   // }
 
-  // &.in-submenu {
-  //   padding: 0;
+  &.in-submenu {
+    padding: 0;
 
-  //   @include respond-to('medium') {
-  //     padding: 0 $mobile-space;
-  //   }
-
-  //   @include respond-to('extra-large') {
-  //     padding: 0;
-  //   }
-  // }
+    @include respond-to('medium') {
+      padding: 0 $mobile-space;
+    }
+  }
 
   &.in-post {
     @include respond-to('medium') {

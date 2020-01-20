@@ -36,6 +36,7 @@
   &.no-picture {
     @include respond-to('medium') {
       background-color: transparent;
+      margin-top:1rem;
       background-image: 
           url('#{$image_path}/main-1.svg'), 
           url('#{$image_path}/main-2.svg'), 

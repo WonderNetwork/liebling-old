@@ -94,10 +94,9 @@
 
   &.more {
     font-size: 6px;
-    // z-index: 6;
     position: relative;
-
-    &.active, &:focus {
+    color: var(--nav-secondary-link);
+    &.active{
       color: var(--primary-subtle-color);
     }
   }

@@ -21,6 +21,8 @@
   --table-background-color-odd: #fafafa;
   --table-head-border-bottom: #e2e2e2;
   --placeholder: #3b4241;
+  --nav-secondary-bg: #fafafb;
+  --nav-secondary-link: #508E8E;
 }
 
 [data-theme="dark"] {
@@ -45,6 +47,8 @@
   --table-background-color-odd: #050505;
   --table-head-border-bottom: #1d1d1d;
   --placeholder: #edf0f0;
+  --nav-secondary-bg: #050505;
+  --nav-secondary-link: #edf0f0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -70,5 +74,7 @@
     --table-background-color-odd: #050505;
     --table-head-border-bottom: #1d1d1d;
     --placeholder: #edf0f0;
+    --nav-secondary-bg: #050505;
+    --nav-secondary-link: #edf0f0;
   }
 }

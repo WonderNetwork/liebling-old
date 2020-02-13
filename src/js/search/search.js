@@ -30,7 +30,7 @@ $(document).ready(function() {
 
     var post = function(url, title, item) {
         return '<div class="m-article-card">'
-            + '<div class="m-article-card" style="background-image: url('+item['feature_image']+');" >'
+            + '<div class="m-article-card__picture" style="background-image: url('+item['feature_image']+');" >'
             + '<a class="m-article-card__picture-link" href="' + url + '" class="st-search-result-link"></a>'
             + '</div>'
             + '<div class="m-article-card__info"><a class="m-article-card__tag" href="'+item['primary_tag_url']+'">'+item['primary_tag']+'</a>'

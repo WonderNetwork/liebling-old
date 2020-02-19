@@ -19,6 +19,10 @@
     display: flex;
   }
 
+  @media (prefers-color-scheme: dark) {
+      background-image: url(#{$image_path}/wonderproxy-white.svg);
+  }
+
   [data-theme="dark"] & {
      background-image: url(#{$image_path}/wonderproxy-white.svg);
   }

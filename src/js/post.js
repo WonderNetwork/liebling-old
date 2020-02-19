@@ -171,7 +171,8 @@ $(document).ready(() => {
   })
 
   $('.js-post-content').find('img').each(function() {
-    if (!$(this).closest('figure').hasClass('kg-bookmark-card')) {
+    if (!$(this).closest('figure').hasClass('kg-bookmark-card') 
+        || !$(this).hasClass('no-zoom')) {
       $(this).addClass('js-zoomable')
     }
 

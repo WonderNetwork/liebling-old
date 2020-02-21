@@ -171,9 +171,12 @@ $(document).ready(() => {
   })
 
   $('.js-post-content').find('img').each(function() {
-    if (!$(this).closest('figure').hasClass('kg-bookmark-card') 
-        || !$(this).hasClass('no-zoom')) {
+    if (!$(this).closest('figure').hasClass('kg-bookmark-card')) {
       $(this).addClass('js-zoomable')
+    }
+
+    if ($(this).hasClass('no-zoom')){
+      $(this).removeClass('js-zoomable')
     }
 
     const $figcaption = $(this).parent().find('figcaption')

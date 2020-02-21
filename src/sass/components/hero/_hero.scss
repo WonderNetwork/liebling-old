@@ -47,6 +47,10 @@
       background-position: top right, left top, 10% 75%, top left, right center;
       background-size: contain, 25% 45%, 25% 40%, contain, contain;
     }
+    
+    @media (prefers-color-scheme: dark) {
+        background: none;
+    }
 
     [data-theme="dark"] & {
       background-image: none;

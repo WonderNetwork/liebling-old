@@ -30,8 +30,8 @@
   "demo": "https://liebling.eduardogomez.io",
   "description": "Beautiful and clean theme that is easy and comfortable to use.",
   "engines": {
-    "ghost": ">=2.0.0",
-    "ghost-api": "v2"
+    "ghost": ">=3.0.0",
+    "ghost-api": "v3"
   },
   "gpm": {
     "type": "theme",
@@ -50,5 +50,5 @@
   ],
   "license": "MIT",
   "name": "liebling",
-  "version": "0.6.3"
+  "version": "0.6.6"
 }

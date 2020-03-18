@@ -15,6 +15,7 @@
   cursor: pointer;
   outline: 0;
   border: 0;
+  position: relative;
   background-color: transparent;
   @extend .no-appearance;
 
@@ -44,6 +45,33 @@
     &:hover, 
     &:focus {
       background-color: var(--secondary-foreground-color);
+    }
+  }
+
+  &.loading {
+    cursor: default;
+    overflow: hidden;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 25%;
+      height: 2px;
+      background-color: $white;
+      @include animation('loading 1s infinite');
+      @include keyframes(loading) {
+        0% {
+          @include transform(translatex(0));
+        }
+        50% {
+          @include transform(translatex(300%));
+        }
+        100% {
+          @include transform(translatex(0));
+        }
+      }
     }
   }
 }

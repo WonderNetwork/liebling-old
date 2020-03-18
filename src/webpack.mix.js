@@ -27,6 +27,9 @@ mix.js('js/helpers.js', 'js/')
   .setResourceRoot('/assets')
   .sass('sass/app.scss', 'css/')
   .setPublicPath('../assets')
+  .options({
+    processCssUrls: false
+  })
   .copy('sass/fonts/icomoon/*.*', '../assets/fonts/')
   .copy('js/search/search.js', '../assets/js/')
   .copy('sass/fonts/euclidsquare/*.*', '../assets/fonts/')

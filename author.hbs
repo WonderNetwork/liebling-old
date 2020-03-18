@@ -23,7 +23,7 @@ into the {body} of the default.hbs template --}}
     {{#if bio}}
     <p class="m-hero-description">{{bio}}</p>
     {{/if}}
-    <div class="m-hero__meta">
+    <div class="m-hero__meta p-bottom">
       {{#has any="twitter, facebook, website"}}
       <ul class="m-hero-social">
         {{#if website}}
@@ -59,11 +59,12 @@ into the {body} of the default.hbs template --}}
         {{/if}}
       </ul>
     </div>
+    <a class="m-button outlined" href="{{@blog.url}}/authors">View all authors</a>
   </div>
   </section>
   {{/author}}
   
-  <main>
+  <main id="main-content">
     <div class="l-content">
       <div class="l-wrapper" data-aos="fade-up" data-aos-delay="300">
         <div class="l-grid centered">

@@ -23,7 +23,7 @@ function onScrolling() {
 }
 
 function adjustShare(timeout) {
-  if (!isMobile('1023px')) {
+  if (!isMobile('1280px')) {
     stickybits('.js-sticky', { stickyBitStickyOffset: 100 })
     $('body').removeClass('share-menu-displayed')
   } else {

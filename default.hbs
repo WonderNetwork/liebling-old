@@ -45,6 +45,8 @@
       }
     </style>
     <link rel="stylesheet" type="text/css" href="{{asset "css/app.css"}}" media="screen" />
+    <script src="{{asset "js/highlight.min.js"}}"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 
     {{!-- This #block helper will pull data from the hero partial 
     to inject styles of the hero image to make it responsive --}}
@@ -59,10 +61,6 @@
       const ghostHost = "{{@site.url}}"
       // @license-end
     </script>
-    <link rel="stylesheet"
-      href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/styles/default.min.css">
-    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.17.1/build/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
   </head>
   <body class="{{body_class}}">
     <!-- Google Tag Manager (noscript) -->

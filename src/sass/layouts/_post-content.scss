@@ -372,35 +372,8 @@
   }
 
   code {
-    display: inline-block;
-    color: var(---titles-color);
-    font-size: 0.9rem;
-    padding: 0 5px;
-    border-radius: 5px;
-    background-color: var(--secondary-subtle-color);
-  }
-
-  pre {
-    line-height: 1.4;
-    margin: 0 0 25px;
-
-    @include respond-to('medium') {
-      margin-bottom: 30px;
-    }
-
-    > code {
-      display: block;
-      padding: 10px;
-      white-space: pre-wrap;
-
-      @include respond-to('medium') {
-        padding: 20px;
-      }
-    }
-
-    &.line-numbers > code {
-      padding: 0;
-    }
+    padding: 16px;
+    border-radius: 3px;
   }
 
   form {

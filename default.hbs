@@ -29,24 +29,8 @@
 
     {{> swiftype }}
 
-    {{!-- Styles'n'Scripts --}}
-    <style>
-      /* This font-face is here to make icons work if the Ghost instance is installed in a subdirectory */
-      @font-face {
-        font-family: 'icomoon';
-        src: url("{{asset 'fonts/icomoon.eot?jcg9f9'}}");
-        src: url("{{asset 'fonts/icomoon.eot?jcg9f9#iefix'}}") format('embedded-opentype'),
-        url("{{asset 'fonts/icomoon.ttf?jcg9f9'}}") format('truetype'),
-        url("{{asset 'fonts/icomoon.woff?jcg9f9'}}") format('woff'),
-        url("{{asset 'fonts/icomoon.svg?jcg9f9#icomoon'}}") format('svg');
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-      }
-    </style>
+    {{!-- Styles --}}
     <link rel="stylesheet" type="text/css" href="{{asset "css/app.css"}}" media="screen" />
-    <script src="{{asset "js/highlight.min.js"}}"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
 
     {{!-- This #block helper will pull data from the hero partial 
     to inject styles of the hero image to make it responsive --}}
@@ -61,6 +45,8 @@
       const ghostHost = "{{@site.url}}"
       // @license-end
     </script>
+    <script src="{{asset "js/highlight.min.js"}}"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </head>
   <body class="{{body_class}}">
     <!-- Google Tag Manager (noscript) -->

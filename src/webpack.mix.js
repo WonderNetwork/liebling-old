@@ -19,7 +19,6 @@ mix.webpackConfig({
 mix.js('js/helpers.js', 'js/')
   .js('js/libs/jquery.swiftype.autocomplete.js', 'js/')
   .js('js/libs/jquery.swiftype.search.js', 'js/')
-  .js('js/libs/highlight.min.js', 'js/')
   .js('js/app.js', 'js/')
   .js('js/home.js', 'js/')
   .js('js/post.js', 'js/')
@@ -33,6 +32,7 @@ mix.js('js/helpers.js', 'js/')
   })
   .copy('sass/fonts/icomoon/*.*', '../assets/fonts/')
   .copy('js/search/search.js', '../assets/js/')
+  .copy('js/libs/highlight.min.js', '../assets/js/')
   .copy('sass/fonts/euclidsquare/*.*', '../assets/fonts/')
   .browserSync({
     proxy: "localhost:2368",

@@ -32,6 +32,7 @@ mix.js('js/helpers.js', 'js/')
   })
   .copy('sass/fonts/icomoon/*.*', '../assets/fonts/')
   .copy('js/search/search.js', '../assets/js/')
+  .copy('js/libs/highlight.min.js', '../assets/js/')
   .copy('sass/fonts/euclidsquare/*.*', '../assets/fonts/')
   .browserSync({
     proxy: "localhost:2368",

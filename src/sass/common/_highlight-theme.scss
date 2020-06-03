@@ -28,6 +28,8 @@ Adapted from: https://github.com/zenorocha/dracula-theme
     color: $wonderGreen200;
 }
 
+.hljs-selector-class,
+.hljs-selector-id,
 .hljs,
 .hljs-subst {
     color: $wonderRed100;
@@ -64,9 +66,11 @@ Adapted from: https://github.com/zenorocha/dracula-theme
 .hljs-type,
 .hljs-name,
 .hljs-strong {
+    color: $wonderBlue;
     font-weight: bold;
 }
 
 .hljs-emphasis {
+    color: $wonderGreen300;
     font-style: italic;
 }

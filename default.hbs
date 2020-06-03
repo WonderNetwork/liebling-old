@@ -46,7 +46,11 @@
       // @license-end
     </script>
     <script type="text/javascript" src="{{asset "js/highlight.min.js"}}"></script>
-    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+    <script type="text/javascript" src="{{asset "js/highlight-robot.js"}}"></script>
+    <script type="text/javascript">
+        hljs.registerLanguage('robotframework', window.hljsDefineRobot);    
+        hljs.initHighlightingOnLoad();
+      </script>
   </head>
   <body class="{{body_class}}">
     <!-- Google Tag Manager (noscript) -->

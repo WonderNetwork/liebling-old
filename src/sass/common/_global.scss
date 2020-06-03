@@ -79,6 +79,8 @@ a {
 code {
     background: $wonderGrey100;
     font-size:0.95rem;
+    white-space: pre;
+    word-break: normal;
 }
 
 pre code {

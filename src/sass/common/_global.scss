@@ -77,7 +77,7 @@ a {
 }
 
 code {
-    background: $wonderGrey100;
+    background: var(--secondary-border-color);
     font-size:0.95rem;
     white-space: pre;
     word-break: normal;

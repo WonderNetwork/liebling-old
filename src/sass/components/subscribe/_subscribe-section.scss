@@ -15,6 +15,13 @@
   }
 }
 
+
+.m-subscribe-checkbox__fieldset {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
 .m-subscribe-section__text {
   text-align: center;
   margin-bottom: 30px;
@@ -55,6 +62,7 @@
 .m-subscribe-section__description {
   letter-spacing: 0.2px;
   line-height: 1.4;
+  margin-bottom: 16px;
 
   @include respond-to('medium') {
     font-size: 1.125rem;

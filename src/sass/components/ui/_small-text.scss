@@ -2,6 +2,10 @@
   color: var(--placeholder);
   font-size: 0.875rem;
 
+  a {
+    color: var(--link-color);
+  }
+
   &.in-subscribe-page {
     padding-top: 30px;
     font-weight: 600;
